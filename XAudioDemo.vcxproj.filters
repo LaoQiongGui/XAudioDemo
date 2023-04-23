@@ -36,6 +36,12 @@
     <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MIndEye.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CodeTable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XAudioDemo.cpp">
@@ -48,6 +54,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MIndEye.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -42,13 +42,13 @@
     <ClInclude Include="CodeTable.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ListenerDto.h">
+    <ClInclude Include="MindEyeListener.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Dtos.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="EmitterDto.h">
+    <ClInclude Include="MindEyeEmitter.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -68,10 +68,10 @@
     <ClCompile Include="MIndEye.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ListenerDto.cpp">
+    <ClCompile Include="MindEyeListener.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="EmitterDto.cpp">
+    <ClCompile Include="MindEyeEmitter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

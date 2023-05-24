@@ -36,7 +36,7 @@
     <ClInclude Include="Common.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MIndEye.h">
+    <ClInclude Include="MindEyeFactory.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CodeTable.h">
@@ -49,6 +49,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MindEyeEmitter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MindEyeSoundEnv.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -65,13 +68,16 @@
     <ClCompile Include="Common.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MIndEye.cpp">
+    <ClCompile Include="MindEyeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MindEyeListener.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MindEyeEmitter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeSoundEnv.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

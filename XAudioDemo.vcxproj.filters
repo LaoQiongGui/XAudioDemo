@@ -54,6 +54,9 @@
     <ClInclude Include="MindEyeSoundEnv.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="MindEyeRendererBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="XAudioDemo.cpp">
@@ -90,6 +93,7 @@
     <None Include="res\XAudioDemo.rc2">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\XAudioDemo.ico">

@@ -96,6 +96,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -169,6 +171,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -191,6 +195,8 @@
     <ClInclude Include="CodeTable.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Dtos.h" />
+    <ClInclude Include="MindEyeRenderer2D.h" />
+    <ClInclude Include="MindEyeRendererBase.h" />
     <ClInclude Include="MindEyeEmitter.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="MindEyeListener.h" />
@@ -221,6 +227,7 @@
     <ResourceCompile Include="XAudioDemo.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="cpp.hint" />
     <None Include="res\XAudioDemo.rc2" />
   </ItemGroup>
   <ItemGroup>

@@ -99,6 +99,7 @@
       <LanguageStandard>Default</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>false</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -195,12 +196,10 @@
   <ItemGroup>
     <ClInclude Include="CodeTable.h" />
     <ClInclude Include="Common.h" />
-    <ClInclude Include="Dtos.h" />
+    <ClInclude Include="MindEyeDto.h" />
     <ClInclude Include="MindEyeRenderer2D.h" />
     <ClInclude Include="MindEyeRendererBase.h" />
-    <ClInclude Include="MindEyeEmitter.h" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="MindEyeListener.h" />
     <ClInclude Include="MindEyeFactory.h" />
     <ClInclude Include="MindEyeSoundEnv.h" />
     <ClInclude Include="pch.h" />
@@ -211,8 +210,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Common.cpp" />
-    <ClCompile Include="MindEyeEmitter.cpp" />
-    <ClCompile Include="MindEyeListener.cpp" />
+    <ClCompile Include="MindEyeDto.cpp" />
     <ClCompile Include="MindEyeFactory.cpp" />
     <ClCompile Include="MindEyeRenderer2D.cpp" />
     <ClCompile Include="MindEyeSoundEnv.cpp" />

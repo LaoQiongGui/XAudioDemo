@@ -42,13 +42,10 @@
     <ClInclude Include="CodeTable.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MindEyeListener.h">
+    <ClInclude Include="MindEyeDto.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Dtos.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MindEyeEmitter.h">
+    <ClInclude Include="MindEyeEmitter2D.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MindEyeSoundEnv.h">
@@ -77,10 +74,7 @@
     <ClCompile Include="MindEyeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MindEyeListener.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MindEyeEmitter.cpp">
+    <ClCompile Include="MindEyeEmitter2D.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MindEyeSoundEnv.cpp">

@@ -35,6 +35,14 @@ BOOL MindEyeEmitterInfo::operator>(const MindEyeEmitterInfo &info) const
 // MindEyeEmitter
 MindEyeEmitter::~MindEyeEmitter()
 {
+    if (pAudio2SourceVoiceL != NULL) {
+        pAudio2SourceVoiceL->Stop();
+        pAudio2SourceVoiceL->DestroyVoice();
+    }
+    if (pAudio2SourceVoiceR != NULL) {
+        pAudio2SourceVoiceR->Stop();
+        pAudio2SourceVoiceR->DestroyVoice();
+    }
     if (pParamL != NULL) {
         delete pParamL;
     }

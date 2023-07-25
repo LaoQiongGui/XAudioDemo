@@ -45,9 +45,6 @@
     <ClInclude Include="MindEyeDto.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="MindEyeEmitter2D.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="MindEyeSoundEnv.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -55,6 +52,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MindEyeRenderer2D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -74,13 +74,16 @@
     <ClCompile Include="MindEyeFactory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="MindEyeEmitter2D.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="MindEyeSoundEnv.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="MindEyeRenderer2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MindEyeDto.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

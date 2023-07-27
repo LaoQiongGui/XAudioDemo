@@ -84,5 +84,5 @@ std::set<MindEyeListenerInfo> getListenerInfoForTest()
     mindEyeListenerInfo_2.spaceInfo = SpaceInfo();
     listenerInfos.insert(mindEyeListenerInfo_1);
     listenerInfos.insert(mindEyeListenerInfo_2);
-    return std::set<MindEyeListenerInfo>();
+    return listenerInfos;
 }

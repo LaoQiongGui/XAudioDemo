@@ -59,7 +59,7 @@ HRESULT testInit()
 
 std::map<DWORD64, MindEyeEmitterInfo *> getEmitterInfoForTest()
 {
-    std::map<DWORD64, MindEyeEmitterInfo*> emitterInfoMap;
+    std::map<DWORD64, MindEyeEmitterInfo *> emitterInfoMap;
     if (
         (!mindEyeEmitterInfo_1.pBufferData ||
          !mindEyeEmitterInfo_2.pBufferData) &&

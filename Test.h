@@ -4,6 +4,6 @@
 
 HRESULT testInit();
 
-std::set<MindEyeEmitterInfo> getEmitterInfoForTest();
+std::map<DWORD64, MindEyeEmitterInfo*> getEmitterInfoForTest();
 
-std::set<MindEyeListenerInfo> getListenerInfoForTest();
+std::map<DWORD64, MindEyeListenerInfo*> getListenerInfoForTest();

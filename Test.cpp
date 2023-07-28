@@ -17,7 +17,6 @@ HRESULT testInit()
     BYTE *pDataBuffer = NULL;
 
     // 设置音频1
-    mindEyeEmitterInfo_1.ID = 1;
     mindEyeEmitterInfo_1.spaceInfo = SpaceInfo();
 
     // 打开音频文件
@@ -37,7 +36,6 @@ HRESULT testInit()
     mindEyeEmitterInfo_1.pBufferData = pDataBuffer;
 
     // 设置音频2
-    mindEyeEmitterInfo_2.ID = 2;
     mindEyeEmitterInfo_2.spaceInfo = SpaceInfo();
 
     // 打开音频文件
@@ -59,30 +57,28 @@ HRESULT testInit()
     return hr;
 }
 
-std::set<MindEyeEmitterInfo> getEmitterInfoForTest()
+std::map<DWORD64, MindEyeEmitterInfo *> getEmitterInfoForTest()
 {
-    std::set<MindEyeEmitterInfo> emitterInfos;
+    std::map<DWORD64, MindEyeEmitterInfo*> emitterInfoMap;
     if (
         (!mindEyeEmitterInfo_1.pBufferData ||
          !mindEyeEmitterInfo_2.pBufferData) &&
         testInit() != S_OK)
     {
         // 初始化失败返回空set
-        return emitterInfos;
+        return emitterInfoMap;
     }
-    emitterInfos.insert(mindEyeEmitterInfo_1);
-    emitterInfos.insert(mindEyeEmitterInfo_2);
-    return emitterInfos;
+    emitterInfoMap[1] = &mindEyeEmitterInfo_1;
+    emitterInfoMap[2] = &mindEyeEmitterInfo_2;
+    return emitterInfoMap;
 }
 
-std::set<MindEyeListenerInfo> getListenerInfoForTest()
+std::map<DWORD64, MindEyeListenerInfo *> getListenerInfoForTest()
 {
-    std::set<MindEyeListenerInfo> listenerInfos;
-    mindEyeListenerInfo_1.ID = 1;
+    std::map<DWORD64, MindEyeListenerInfo *> listenerInfoMap;
     mindEyeListenerInfo_1.spaceInfo = SpaceInfo();
-    mindEyeListenerInfo_2.ID = 2;
     mindEyeListenerInfo_2.spaceInfo = SpaceInfo();
-    listenerInfos.insert(mindEyeListenerInfo_1);
-    listenerInfos.insert(mindEyeListenerInfo_2);
-    return listenerInfos;
+    listenerInfoMap[1] = &mindEyeListenerInfo_1;
+    listenerInfoMap[2] = &mindEyeListenerInfo_2;
+    return listenerInfoMap;
 }

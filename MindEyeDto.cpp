@@ -43,12 +43,6 @@ MindEyeEmitter::~MindEyeEmitter()
         pAudio2SourceVoiceR->Stop();
         pAudio2SourceVoiceR->DestroyVoice();
     }
-    if (pParamL != NULL) {
-        delete pParamL;
-    }
-    if (pParamR != NULL) {
-        delete pParamR;
-    }
 }
 
 BOOL MindEyeEmitter::operator==(const DWORD64 &ID) const

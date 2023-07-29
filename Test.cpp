@@ -2,7 +2,7 @@
 #include "Test.h"
 
 WCHAR wWavFilePath_1[] = L"D:/Workspace/LaoQiongGui/XAudioDemo/resources/sound_effect_sample_31.wav";
-WCHAR wWavFilePath_2[] = L"D:/Workspace/LaoQiongGui/XAudioDemo/resources/sound_effect_sample_32.wav";
+WCHAR wWavFilePath_2[] = L"D:/Workspace/LaoQiongGui/XAudioDemo/resources/sound_effect_sample_31.wav";
 MindEyeEmitterInfo mindEyeEmitterInfo_1;
 MindEyeEmitterInfo mindEyeEmitterInfo_2;
 MindEyeListenerInfo mindEyeListenerInfo_1;

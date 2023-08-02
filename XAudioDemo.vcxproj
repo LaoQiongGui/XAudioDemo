@@ -76,7 +76,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\Workspace\Visual c++ libs\spdlog-1.11.0\include;D:\Workspace\Visual c++ libs\fftw-3.3.5-dll64\include</IncludePath>
+    <IncludePath>$(MSBuildProjectDirectory)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\libs\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
@@ -86,7 +87,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>D:\Workspace\Visual c++ libs\spdlog-1.11.0\include;D:\Workspace\Visual c++ libs\fftw-3.3.5-dll64\include</IncludePath>
+    <IncludePath>$(MSBuildProjectDirectory)\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\libs\x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -103,7 +105,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\d2d1.lib;D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\libfftw3-3.lib;D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\xaudio2_8.lib;D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\xapobase2_8.lib</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -180,7 +182,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\d2d1.lib;D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\libfftw3-3.lib;D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\xaudio2_8.lib;D:\Workspace\LaoQiongGui\XAudioDemo\libs\x64\xapobase2_8.lib</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>

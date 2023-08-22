@@ -23,7 +23,10 @@ HRESULT testInit()
     hFile = ::CreateFile(
         wWavFilePath_1, GENERIC_READ, FILE_SHARE_READ,
         NULL, OPEN_EXISTING, 0, NULL);
-    ASSERT(hFile != NULL);
+    if (hFile == INVALID_HANDLE_VALUE)
+    {
+        logger->error(L"打开音频文件 {0} 失败", wWavFilePath_1);
+    }
 
     // 读取音频数据
     FindChunk(hFile, fourccDATA, dwChunkSize, dwChunkPosition);
@@ -42,7 +45,10 @@ HRESULT testInit()
     hFile = ::CreateFile(
         wWavFilePath_2, GENERIC_READ, FILE_SHARE_READ,
         NULL, OPEN_EXISTING, 0, NULL);
-    ASSERT(hFile != NULL);
+    if (hFile == INVALID_HANDLE_VALUE)
+    {
+        logger->error(L"打开音频文件 {0} 失败", wWavFilePath_2);
+    }
 
     // 读取音频数据
     FindChunk(hFile, fourccDATA, dwChunkSize, dwChunkPosition);

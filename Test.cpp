@@ -30,7 +30,7 @@ HRESULT testInit()
 
     // 读取音频数据
     FindChunk(hFile, fourccDATA, dwChunkSize, dwChunkPosition);
-    pDataBuffer = new BYTE[dwChunkSize];
+    pDataBuffer = new BYTE[dwChunkSize]{};
     ReadChunkData(hFile, pDataBuffer, dwChunkSize, dwChunkPosition);
 
     // 关闭音频文件（读取）
@@ -52,7 +52,7 @@ HRESULT testInit()
 
     // 读取音频数据
     FindChunk(hFile, fourccDATA, dwChunkSize, dwChunkPosition);
-    pDataBuffer = new BYTE[dwChunkSize];
+    pDataBuffer = new BYTE[dwChunkSize]{};
     ReadChunkData(hFile, pDataBuffer, dwChunkSize, dwChunkPosition);
 
     // 关闭音频文件（读取）

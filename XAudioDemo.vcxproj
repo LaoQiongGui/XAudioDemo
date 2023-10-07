@@ -110,10 +110,11 @@
       <Optimization>Disabled</Optimization>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4996;6031;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>d2d1.lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib</AdditionalDependencies>
+      <AdditionalDependencies>d2d1.lib;libfftw3-3.lib;xaudio2_8.lib;xapobase2_8.lib;sapi.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
